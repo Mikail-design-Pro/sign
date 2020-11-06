@@ -1,0 +1,1 @@
+INSERT INTO posts (client, mdpass, date) VALUES('ceci est le client', 'et ceci le mdp', '2020-11-6 8:46');

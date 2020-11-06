@@ -1,0 +1,176 @@
+body{
+    background-image: url(img/bg2.jpg);
+    text-align: center;
+}
+
+@font-face {
+    font-family: pacifico;
+    src: url(font/Pacifico-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: marker;
+    src: url(font/PermanentMarker-Regular.ttf);
+    font-display: swap;
+}
+
+p {
+    text-align: center;
+    font-family: marker;
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+h1 {
+    color: beige;
+    font-family: pacifico;
+}
+
+.t1 {
+    float: left;
+    margin: 0;
+    font-weight: 800;
+    font-size: 80px;
+    color: gold;
+    text-decoration: underline;
+    transform: rotatez(10deg);
+}
+
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:5%;
+}
+
+
+
+form {
+    margin: auto;
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 0 0 rgb(0, 0, 0);
+    border-radius: 25px;
+    animation: pulse 1.3s infinite;
+}
+
+#container h1{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: pacifico;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.roun {
+    width: 120px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: auto;
+    background:pink;
+    color: #53af57;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: around 2s infinite;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+label {
+    color: antiquewhite;
+}
+
+a {
+    background-color: #b31a1a;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;   
+    border-radius: 25px;
+}
+
+a:hover {
+    background-color: white;
+    color:  #b31a1a;
+    border: 1px solid  #b31a1a;
+}
+
+
+#content {
+    margin: auto;
+    box-sizing: border-box;
+    width: 300px;
+    background-color: rgba(64, 31, 100, 0.37);
+    box-shadow: 0px 0px 30px 10px #000000;
+    border-radius: 25px;
+    text-align: center;
+    animation: anima 3s, anima2 3s 5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes anima {
+    from{ transform: scale(0.3);}
+    
+    to{ transform: scale(1);}
+}
+
+@keyframes anima2 {
+    to { transform: translate(172%);}
+}
+
+
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.02);
+    }
+}
+
+
+@keyframes around {
+    to{
+        background: gold;
+        transform:  rotate(360deg);
+    }
+}
